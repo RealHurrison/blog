@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    npm使用镜像和对包的操作 |  Hurrison&#39; blog
+    浏览器硬性刷新 |  Hurrison&#39; blog
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -41,7 +41,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-npm 更改为淘宝镜像的方法"
+  id="post-浏览器硬性刷新"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -52,22 +52,22 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  npm使用镜像和对包的操作
+  浏览器硬性刷新
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/02/25/npm%20%E6%9B%B4%E6%94%B9%E4%B8%BA%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E7%9A%84%E6%96%B9%E6%B3%95/" class="article-date">
-  <time datetime="2021-02-25T12:50:30.000Z" itemprop="datePublished">2021-02-25</time>
+      <a href="/posts/41879/" class="article-date">
+  <time datetime="2021-02-25T14:17:44.000Z" itemprop="datePublished">2021-02-25</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">443</span>
+            <span class="post-count">676</span>
         </span>
     </span>
 
@@ -76,7 +76,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -91,46 +91,17 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="方法总结"><a href="#方法总结" class="headerlink" title="方法总结"></a>方法总结</h1><h2 id="1、命令行临时使用指定镜像（淘宝）"><a href="#1、命令行临时使用指定镜像（淘宝）" class="headerlink" title="1、命令行临时使用指定镜像（淘宝）"></a>1、命令行临时使用指定镜像（淘宝）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry https:&#x2F;&#x2F;registry.npm.taobao.org install express</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h2 id="2、命令行永久更改使用指定镜像（淘宝）"><a href="#2、命令行永久更改使用指定镜像（淘宝）" class="headerlink" title="2、命令行永久更改使用指定镜像（淘宝）"></a>2、命令行永久更改使用指定镜像（淘宝）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>以后 npm install express 默认使用指定（淘宝）镜像</p>
-<p> </p>
-<h2 id="3、通过npm配置文件直接修改"><a href="#3、通过npm配置文件直接修改" class="headerlink" title="3、通过npm配置文件直接修改"></a>3、通过npm配置文件直接修改</h2><p>本质和第2条一样，配置文件位置（windows环境）为C盘下的.npmrc文件（百度很容易查到文件路径），MAC没试过。可以用如下命令找到配置文件位置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config ls -l</span><br></pre></td></tr></table></figure>
-
-<img alt="" class="has" height="194" src="https://hurrisonx.gitee.io/pic/2021-2/20210225005.png" width="600">
-
-<h2 id="4、使用淘宝-NPM-镜像"><a href="#4、使用淘宝-NPM-镜像" class="headerlink" title="4、使用淘宝 NPM 镜像"></a>4、使用淘宝 NPM 镜像</h2><p>（参考 <a target="_blank" rel="noopener" href="http://www.runoob.com/nodejs/nodejs-npm.html">传送门</a>）</p>
-<p>命令行输入 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>这样就可以使用 cnpm 命令来安装模块了： cnpm install express</p>
-<p>查看目前使用的npm镜像的方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<h2 id="5、设置单独某个包的下载地址"><a href="#5、设置单独某个包的下载地址" class="headerlink" title="5、设置单独某个包的下载地址"></a>5、设置单独某个包的下载地址</h2><p>以包electron，其镜像为例</p>
-<p>打开.npmrc，添加该包的指定镜像，截图如下</p>
-<p>               <img alt="" class="has" height="82" src="https://hurrisonx.gitee.io/pic/2021-2/20210225004.png" width="654"></p>
-<h2 id="6、将镜像源改回国外的源的方法"><a href="#6、将镜像源改回国外的源的方法" class="headerlink" title="6、将镜像源改回国外的源的方法"></a>6、将镜像源改回国外的源的方法</h2><p>要想将镜像源改回国外的源可以直接将.npmrc文件直接删除，想恢复时直接从回收站还原即可。</p>
-<h2 id="7、查看npm源上包的所有版本"><a href="#7、查看npm源上包的所有版本" class="headerlink" title="7、查看npm源上包的所有版本"></a>7、查看npm源上包的所有版本</h2><p>以 <strong>**babel-core **</strong>为例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm view babel-core versions</span><br></pre></td></tr></table></figure>
-
-<h2 id="8、安装包的最新版本，包含beta版"><a href="#8、安装包的最新版本，包含beta版" class="headerlink" title="8、安装包的最新版本，包含beta版"></a>8、安装包的最新版本，包含beta版</h2><p>以 <strong>**babel-core **</strong>为例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-core@next</span><br></pre></td></tr></table></figure>
-
-<h2 id="9、查看package-lock-json中具体依赖树"><a href="#9、查看package-lock-json中具体依赖树" class="headerlink" title="9、查看package-lock.json中具体依赖树"></a>9、查看package-lock.json中具体依赖树</h2><p>以开源库tar为例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ls tar</span><br></pre></td></tr></table></figure>
-
-<img alt="" class="has" height="180" src="https://hurrisonx.gitee.io/pic/2021-2/20210225003.png" width="411">
-
-<p> </p>
-<h2 id="10、npm的缓存及全局包位置（默认情况）"><a href="#10、npm的缓存及全局包位置（默认情况）" class="headerlink" title="10、npm的缓存及全局包位置（默认情况）"></a>10、npm的缓存及全局包位置（默认情况）</h2><p>可以通过命令行”npm config get cache”获取缓存目录，对于全局路径还可以用这个命令”npm root -g”</p>
-<p>mac下： /Users/apple/.npmrc  (“apple”是自己的mac用户名)</p>
-<p>window下：%APPDATA%/npm/node_modules</p>
-<h2 id="12、npm源管理工具："><a href="#12、npm源管理工具：" class="headerlink" title="12、npm源管理工具："></a>12、npm源管理工具：</h2><p>nrm：npm install -g nrm</p>
-<p> </p>
+  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有时，网站的行为可能不符合预期，或者似乎停留在显示过时的信息。 要解决此问题，很容易通过简单的键盘快捷键强制浏览器完全重新加载其页面的本地副本(缓存)。 以下是介绍和操作方法。</p>
+<h2 id="什么是浏览器缓存？"><a href="#什么是浏览器缓存？" class="headerlink" title="什么是浏览器缓存？"></a>什么是浏览器缓存？</h2><p>为了加快浏览速度，Web浏览器将网站数据的副本作为一组称为缓存的文件保存到您的计算机上。 加载网站时，通常会查看从缓存中提取的网站元素的本地副本(例如图像)。通常，如果浏览器加载了网站并检测到更改，它将从远程Web服务器获取该网站的新版本并替换缓存。 但是此过程并不完美，有时您的浏览器可能最终会在浏览器缓存中获得网站数据的本地副本，而该副本与服务器上的最新版本不匹配。 因此，网页可能看起来不正确或无法正常运行。要解决此问题，我们需要强制Web浏览器放弃其在缓存中已经拥有的内容，并下载该网站的最新版本。 许多人将此称为“硬刷新”。</p>
+<h2 id="如何在浏览器中执行硬刷新"><a href="#如何在浏览器中执行硬刷新" class="headerlink" title="如何在浏览器中执行硬刷新"></a>如何在浏览器中执行硬刷新</h2><p>在PC和Mac上的大多数浏览器中，您可以执行简单的操作来强制进行硬刷新。 按住键盘上的Shift键，然后单击浏览器工具栏上的重新加载图标。<br><img src="https://hurrisonx.gitee.io/pic/2021-2/20210225006.png"></p>
+<p>也有键盘快捷键可以执行等效的硬刷新。 由于有多种方法可以执行相同的操作，因此将在下面列出：</p>
+<ul>
+<li>适用于Windows的Chrome，Firefox或Edge：按Ctrl + F5(如果不起作用，请尝试按Shift + F5或Ctrl + Shift + R)。</li>
+<li>适用于Mac的Chrome或Firefox：按Shift + Command + R。</li>
+<li>Mac版Safari：没有简单的键盘快捷键可以强制进行硬刷新。 而是按Command + Option + E清空缓存，然后按住Shift并单击工具栏中的“重新加载”。</li>
+<li>适用于iPhone和iPad的Safari：没有用于强制刷新缓存的快捷方式。 您必须深入研究设置才能清除浏览器的缓存。</li>
+</ul>
+<p>执行硬刷新后，您应该会看到网页空白，并且重新加载过程将比平时花费更长的时间。 那是因为浏览器正在重新下载站点上的所有数据和图像。<br>如果强制刷新不能解决问题，则可以尝试再次进行硬刷新。 如果这样没有帮助，则问题可能出在网站本身上，或者您的浏览器可能需要更新 。 祝好运！</p>
  
       <!-- reward -->
       
@@ -183,11 +154,13 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.hurrison.com/2021/02/25/npm%20%E6%9B%B4%E6%94%B9%E4%B8%BA%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F%E7%9A%84%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.hurrison.com/posts/41879/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E6%80%A7%E5%88%B7%E6%96%B0/" rel="tag">硬性刷新</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
     </footer>
   </div>
 
@@ -195,9 +168,9 @@
   <nav class="article-nav">
     
     
-      <a href="/2021/02/25/%E4%BD%BF%E7%94%A8patch-package%E4%BF%AE%E6%94%B9Node-js%E4%BE%9D%E8%B5%96%E5%8C%85%E5%86%85%E5%AE%B9/" class="article-nav-link">
+      <a href="/posts/2198/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">使用patch-package修改Node.js依赖包内容</div>
+        <div class="article-nav-title">npm使用镜像和对包的操作</div>
       </a>
     
   </nav>
