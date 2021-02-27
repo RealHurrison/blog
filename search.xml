@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Butterfly帖子的cover图片显示不全解决办法</title>
+    <url>/posts/49513.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>这几天把我WordPress的文章搬过来,结果在WP上Cover是正常的,在Butterfly上却显示不全，如图<br><img src= "https://hurrisonx.gitee.io/pic/common/loading.gif" data-lazy-src="https://hurrisonx.gitee.io/pic/2021-2/2.png" alt="图片无法显示" title="在WP上"></p>
+<p><img src= "https://hurrisonx.gitee.io/pic/common/loading.gif" data-lazy-src="https://hurrisonx.gitee.io/pic/2021-2/3.png" alt="图片无法显示" title="在Butterfly上"></p>
+<h2 id="尝试处理"><a href="#尝试处理" class="headerlink" title="尝试处理"></a>尝试处理</h2><p>经Butterfly QQ群大佬提醒,发现如下CSS</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#recent-posts</span> &gt; <span class="selector-class">.recent-post-item</span> <span class="selector-class">.post_cover</span> <span class="selector-tag">img</span><span class="selector-class">.post_bg</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    -webkit-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -moz-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -o-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -ms-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    <span class="attribute">object-fit</span>: cover;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>注意到<code>object-fit: cover</code> 查询DOC,如下:</p>
+<blockquote>
+<p>object-fit 属性指定元素的内容应该如何去适应指定容器的高度与宽度。object-fit 一般用于 img 和 video 标签，一般可以对这些元素进行保留原始比例的剪切、缩放或者直接进行拉伸等。您可以通过使用 object-position 属性来切换被替换元素的内容对象在元素框内的对齐方式。</p>
+</blockquote>
+<p>有如下设置:<br>| 值        | 描述                                                                                                      |<br>| ———- | ———————————————————————————————————– |<br>| fill       | 默认，不保证保持原有的比例，内容拉伸填充整个内容容器。                           |<br>| contain    | 保持原有尺寸比例。内容被缩放。                                                               |<br>| cover      | 保持原有尺寸比例。但部分内容可能被剪切。                                                |<br>| none       | 保留原有元素内容的长度和宽度，也就是说内容不会被重置。                           |<br>| scale-down | 保持原有尺寸比例。内容的尺寸与 none 或 contain 中的一个相同，取决于它们两个之间谁得到的对象尺寸会更小一些。 |<br>| initial    | 设置为默认值。                                                                                       |<br>| inherit    | 从该元素的父元素继承属性。                                                                     |</p>
+<p>显然在这里用<code>cover</code>是导致图片显示不全的原因,下面我们开始修复</p>
+<h2 id="修复方案"><a href="#修复方案" class="headerlink" title="修复方案"></a>修复方案</h2><p>使用CSS，在Inject引入<br>CSS 代码如下:</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#recent-posts</span> &gt; <span class="selector-class">.recent-post-item</span> <span class="selector-class">.post_cover</span> <span class="selector-tag">img</span><span class="selector-class">.post_bg</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    -webkit-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -moz-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -o-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    -ms-<span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.6s</span>;</span><br><span class="line">    <span class="attribute">object-fit</span>: fill<span class="meta">!important</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Butterfly</tag>
+        <tag>图片</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++ Base64实现</title>
     <url>/posts/64987.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Base介绍"><a href="#Base介绍" class="headerlink" title="Base介绍"></a>Base介绍</h2><p>Base64是网络上最常见的用于传输8Bit字节码的编码方式之一，Base64就是一种基于64个可打印字符来表示二进制数据的方法。可查看RFC2045～RFC2049，上面有MIME的详细规范。<br>Base64编码是从二进制到字符的过程，可用于在HTTP环境下传递较长的标识信息。采用Base64编码具有不可读性，需要解码后才能阅读。<br>Base64由于以上优点被广泛应用于计算机的各个领域，然而由于输出内容中包括两个以上“符号类”字符（+, /, =)，不同的应用场景又分别研制了Base64的各种“变种”</p>
@@ -470,7 +496,7 @@
 <h2 id="1-先来说说git仓库"><a href="#1-先来说说git仓库" class="headerlink" title="1.先来说说git仓库"></a>1.先来说说git仓库</h2><p>git仓库有很多代码托管平台，Github、Gitee、Gitlab,Codeup等等，本文使用Gitee配置webhook，其他git仓库大致相同效仿就行。</p>
 <p><strong>使用git clone代码有两种方式：</strong></p>
 <p>第一种：https方式，例如：</p>
-<p>第二种：ssh密钥方式，例如：<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x65;&#101;&#x2e;&#99;&#111;&#x6d;</a>:xxxx/xxxxx.git</p>
+<p>第二种：ssh密钥方式，例如：<a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#101;&#x65;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#101;&#x65;&#46;&#99;&#x6f;&#109;</a>:xxxx/xxxxx.git</p>
 <p>这两种方式拉代码是有区别的，例：</p>
 <p><strong>https方式拉代码：</strong></p>
 <p>使用git命令</p>
