@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.hurrison.com/reference/blog.html</loc>
+    <loc>https://www.hurrison.com/reference/index.html</loc>
     
     <lastmod>2021-02-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hurrison.com/reference/index.html</loc>
+    <loc>https://www.hurrison.com/reference/blog.html</loc>
     
     <lastmod>2021-02-28</lastmod>
     
@@ -30,14 +30,14 @@
   </url>
   
   <url>
-    <loc>https://www.hurrison.com/categories/index.html</loc>
+    <loc>https://www.hurrison.com/link/index.html</loc>
     
     <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hurrison.com/link/index.html</loc>
+    <loc>https://www.hurrison.com/categories/index.html</loc>
     
     <lastmod>2021-02-27</lastmod>
     
@@ -403,6 +403,13 @@
   </url>
   
   <url>
+    <loc>https://www.hurrison.com/tags/%E6%98%93%E9%94%99/</loc>
+    <lastmod>2021-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.hurrison.com/tags/Sabaki/</loc>
     <lastmod>2021-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -439,13 +446,6 @@
   
   <url>
     <loc>https://www.hurrison.com/tags/%E8%BD%AC%E6%8D%A2%E5%99%A8/</loc>
-    <lastmod>2021-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hurrison.com/tags/%E6%98%93%E9%94%99/</loc>
     <lastmod>2021-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
