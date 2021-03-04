@@ -389,20 +389,6 @@
   </url>
   
   <url>
-    <loc>https://www.hurrison.com/tags/%E5%AE%9D%E5%A1%94/</loc>
-    <lastmod>2021-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hurrison.com/tags/webhook/</loc>
-    <lastmod>2021-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.hurrison.com/tags/npm/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -418,6 +404,20 @@
   
   <url>
     <loc>https://www.hurrison.com/tags/package/</loc>
+    <lastmod>2021-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hurrison.com/tags/%E5%AE%9D%E5%A1%94/</loc>
+    <lastmod>2021-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hurrison.com/tags/webhook/</loc>
     <lastmod>2021-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
