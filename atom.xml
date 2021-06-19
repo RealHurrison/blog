@@ -6,7 +6,7 @@
   <link href="https://www.hurrison.com/atom.xml" rel="self"/>
   
   <link href="https://www.hurrison.com/"/>
-  <updated>2021-06-19T00:39:42.000Z</updated>
+  <updated>2021-06-19T22:06:46.000Z</updated>
   <id>https://www.hurrison.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python3通过smtp发送office365(Outlook,Exchange Online)邮件</title>
+    <link href="https://www.hurrison.com/posts/3680.html"/>
+    <id>https://www.hurrison.com/posts/3680.html</id>
+    <published>2021-06-19T22:06:46.000Z</published>
+    <updated>2021-06-19T22:06:46.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.hurrison.com/categories/note/"/>
+    
+    
+    <category term="Python" scheme="https://www.hurrison.com/tags/Python/"/>
+    
+    <category term="smtp" scheme="https://www.hurrison.com/tags/smtp/"/>
+    
+    <category term="ffice365" scheme="https://www.hurrison.com/tags/ffice365/"/>
+    
+    <category term="Outlook" scheme="https://www.hurrison.com/tags/Outlook/"/>
+    
+  </entry>
   
   <entry>
     <title>树莓派开启wifi热点</title>
@@ -64,9 +95,9 @@
     <category term="笔记" scheme="https://www.hurrison.com/categories/note/"/>
     
     
-    <category term="Outlook" scheme="https://www.hurrison.com/tags/Outlook/"/>
-    
     <category term="smtp" scheme="https://www.hurrison.com/tags/smtp/"/>
+    
+    <category term="Outlook" scheme="https://www.hurrison.com/tags/Outlook/"/>
     
     <category term="邮件" scheme="https://www.hurrison.com/tags/%E9%82%AE%E4%BB%B6/"/>
     
@@ -540,37 +571,6 @@
     <category term="棋谱" scheme="https://www.hurrison.com/tags/%E6%A3%8B%E8%B0%B1/"/>
     
     <category term="AI" scheme="https://www.hurrison.com/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>弈城围棋棋谱转换器</title>
-    <link href="https://www.hurrison.com/posts/45951.html"/>
-    <id>https://www.hurrison.com/posts/45951.html</id>
-    <published>2020-02-01T09:33:46.000Z</published>
-    <updated>2020-02-01T09:33:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.hurrison.com/categories/note/"/>
-    
-    
-    <category term="围棋" scheme="https://www.hurrison.com/tags/%E5%9B%B4%E6%A3%8B/"/>
-    
-    <category term="棋谱" scheme="https://www.hurrison.com/tags/%E6%A3%8B%E8%B0%B1/"/>
-    
-    <category term="弈城围棋" scheme="https://www.hurrison.com/tags/%E5%BC%88%E5%9F%8E%E5%9B%B4%E6%A3%8B/"/>
-    
-    <category term="转换器" scheme="https://www.hurrison.com/tags/%E8%BD%AC%E6%8D%A2%E5%99%A8/"/>
     
   </entry>
   
