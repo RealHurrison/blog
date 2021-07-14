@@ -6,7 +6,7 @@
   <link href="https://www.hurrison.com/atom.xml" rel="self"/>
   
   <link href="https://www.hurrison.com/"/>
-  <updated>2021-06-19T22:06:46.000Z</updated>
+  <updated>2021-07-14T12:49:00.000Z</updated>
   <id>https://www.hurrison.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring笔记</title>
+    <link href="https://www.hurrison.com/posts/52168.html"/>
+    <id>https://www.hurrison.com/posts/52168.html</id>
+    <published>2021-07-14T12:49:00.000Z</published>
+    <updated>2021-07-14T12:49:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.hurrison.com/categories/note/"/>
+    
+    
+    <category term="Spring" scheme="https://www.hurrison.com/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>Python3通过smtp发送office365(Outlook,Exchange Online)邮件</title>
@@ -540,37 +565,6 @@
     <category term="RegexBuddy" scheme="https://www.hurrison.com/tags/RegexBuddy/"/>
     
     <category term="已付费零售版" scheme="https://www.hurrison.com/tags/%E5%B7%B2%E4%BB%98%E8%B4%B9%E9%9B%B6%E5%94%AE%E7%89%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>围棋UI-Sabaki安装步骤</title>
-    <link href="https://www.hurrison.com/posts/45220.html"/>
-    <id>https://www.hurrison.com/posts/45220.html</id>
-    <published>2020-02-02T09:33:46.000Z</published>
-    <updated>2020-02-02T09:33:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.hurrison.com/categories/note/"/>
-    
-    
-    <category term="Sabaki" scheme="https://www.hurrison.com/tags/Sabaki/"/>
-    
-    <category term="围棋" scheme="https://www.hurrison.com/tags/%E5%9B%B4%E6%A3%8B/"/>
-    
-    <category term="棋谱" scheme="https://www.hurrison.com/tags/%E6%A3%8B%E8%B0%B1/"/>
-    
-    <category term="AI" scheme="https://www.hurrison.com/tags/AI/"/>
     
   </entry>
   
